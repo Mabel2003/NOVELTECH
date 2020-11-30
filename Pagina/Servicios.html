@@ -1,0 +1,260 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #D4FF55;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+NUEVA REGLA {
+	background-image: url(../Imagenes/IMA3.jpg);
+}
+NUEVA {
+	font-size: 36px;
+	background-image: url(../Imagenes/IMA3.jpg);
+}
+
+/* ~~ Selectores de elemento/etiqueta ~~ */
+ul, ol, dl { /* Debido a las diferencias existentes entre los navegadores, es recomendable no añadir relleno ni márgenes en las listas. Para lograr coherencia, puede especificar las cantidades deseadas aquí o en los elementos de lista (LI, DT, DD) que contienen. Recuerde que lo que haga aquí se aplicará en cascada en la lista .nav, a no ser que escriba un selector más específico. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* la eliminación del margen superior resuelve un problema que origina que los márgenes escapen de la etiqueta div contenedora. El margen inferior restante lo mantendrá separado de los elementos de que le sigan. */
+	padding-right: 15px;
+	padding-left: 15px; /* la adición de relleno a los lados del elemento dentro de las divs, en lugar de en las divs propiamente dichas, elimina todas las matemáticas de modelo de cuadro. Una div anidada con relleno lateral también puede usarse como método alternativo. */
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-align: center;
+	font-size: 100%;
+}
+a img { /* este selector elimina el borde azul predeterminado que se muestra en algunos navegadores alrededor de una imagen cuando está rodeada por un vínculo */
+	border: none;
+}
+/* ~~ La aplicación de estilo a los vínculos del sitio debe permanecer en este orden (incluido el grupo de selectores que crea el efecto hover -paso por encima-). ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* a no ser que aplique estilos a los vínculos para que tengan un aspecto muy exclusivo, es recomendable proporcionar subrayados para facilitar una identificación visual rápida */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* este grupo de selectores proporcionará a un usuario que navegue mediante el teclado la misma experiencia de hover (paso por encima) que experimenta un usuario que emplea un ratón. */
+	text-decoration: none;
+}
+
+/* ~~ este contenedor de anchura fija rodea a las demás divs ~~ */
+.container {
+	width: 960px;
+	background-color: #FFF;
+	margin: 0 auto; /* el valor automático de los lados, unido a la anchura, centra el diseño */
+}
+
+/* ~~ no se asigna una anchura al encabezado. Se extenderá por toda la anchura del diseño. Contiene un marcador de posición de imagen que debe sustituirse por su propio logotipo vinculado ~~ */
+.header {
+	background-color: #0033FF;
+}
+
+/* ~~ Esta es la información de diseño. ~~ 
+
+1) El relleno sólo se sitúa en la parte superior y/o inferior de la div. Los elementos situados dentro de esta div tienen relleno a los lados. Esto le ahorra las "matemáticas de modelo de cuadro". Recuerde que si añade relleno o borde lateral a la div propiamente dicha, éste se añadirá a la anchura que defina para crear la anchura *total*. También puede optar por eliminar el relleno del elemento en la div y colocar una segunda div dentro de ésta sin anchura y el relleno necesario para el diseño deseado.
+
+*/
+
+.content {
+	padding: 10px 0;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+
+/* ~~ El pie de página ~~ */
+.footer {
+	padding: 10px 0;
+	background-color: #CCC49F;
+}
+
+/* ~~ clases float/clear varias ~~ */
+.fltrt {  /* esta clase puede utilizarse para que un elemento flote en la parte derecha de la página. El elemento flotante debe preceder al elemento junto al que debe aparecer en la página. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* esta clase puede utilizarse para que un elemento flote en la parte izquierda de la página. El elemento flotante debe preceder al elemento junto al que debe aparecer en la página. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* esta clase puede situarse en una <br /> o div vacía como elemento final tras la última div flotante (dentro de #container) si #footer se elimina o se saca fuera de #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+#apDiv1 {
+	position: absolute;
+	width: 189px;
+	height: 161px;
+	z-index: 1;
+	left: 134px;
+	top: 552px;
+}
+.container .content table tr td {
+	text-align: center;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 100%;
+}
+.container .content table {
+}
+.container .content table {
+	font-size: 100%;
+}
+#apDiv2 {
+	position: absolute;
+	width: 110px;
+	height: 45px;
+	z-index: 1;
+	left: 753px;
+	top: 167px;
+}
+#apDiv {
+	position: absolute;
+	width: 116px;
+	height: 43px;
+	z-index: 1;
+	left: 635px;
+	top: 167px;
+}
+#apDiv3 {
+	position: absolute;
+	width: 114px;
+	height: 41px;
+	z-index: 1;
+	left: 981px;
+	top: 164px;
+}
+#apDiv4 {
+	position: absolute;
+	width: 115px;
+	height: 45px;
+	z-index: 1;
+	left: 863px;
+	top: 167px;
+}
+#apDiv5 {
+	position: absolute;
+	width: 152px;
+	height: 42px;
+	z-index: 2;
+	left: 484px;
+	top: 166px;
+}
+#apDiv6 {
+	position: absolute;
+	width: 173px;
+	height: 59px;
+	z-index: 3;
+	left: 135px;
+	top: 1846px;
+}
+#apDiv7 {
+	position: absolute;
+	width: 197px;
+	height: 64px;
+	z-index: 4;
+	left: 698px;
+	top: 1844px;
+}
+-->
+</style>
+<meta name="description" content="Mantenimiento y Reparacion de computadoras" />
+</head>
+
+<body>
+
+<div class="container">
+  <div class="header">
+    <p><a href="#"><img src="../Imagenes/NOVEL TECH.png" alt="Insertar logotipo aquí" name="Insert_logo" width="294" height="205" id="Insert_logo" style="background-color: #00FF99; display: block;" /></a></p>
+    <div id="apDiv"><a href="Inicio.html"><img src="../Botones/button_inicio.png" width="112" height="46" alt="g" /></a></div>
+    <div id="apDiv3"><a href="Contacto.html"><img src="../Botones/button_contacto (1).png" width="111" height="49" alt="u" /></a></div>
+    <div id="apDiv4"><a href="Soporte.html"><img src="../Botones/button_soporte.png" width="118" height="46" alt="y" /></a></div>
+  </div>
+  <div class="content">
+    <h2>Servicios</h2>
+    <div id="apDiv5"><a href="NOVEL TECH.html.html"><img src="../Botones/button_pagina-principal.png" width="147" height="48" alt="g" /></a></div>
+    <p>Si su equipo dejo de funcionar, no se preocupe ni se alarme, nosotros lo solucionamos, contamos con técnicos capaces de solucionar el problema en el lugar de su negocio o residencia, y si se requiere traslado hasta nuestro taller de reparación, su equipo será devuelto con la garantía de no realizar ningún cambio ajeno al servicio solicitado.<br />
+      <br />
+      Sabemos lo importante que es para usted solucionar el problema, por eso, garantizamos dar solución en un máximo de 72 horas una vez que ha sido diagnosticado.<br />
+      <br />
+    Conozca todo sobre nuestros diferentes <strong>Servicios</strong> que le pueden hacer mucho más fácil y efectivo un proceso o tarea dentro de su Empresa, Negocio o Residencia.</p>
+    <table width="586" height="223" border="1" align="center">
+      <tr>
+        <td width="265" height="122"><img src="../Imagenes/servicio1.jpg" width="290" height="168" alt="1" /></td>
+        <td width="265"><img src="../Imagenes/Servicio2.jpg" width="258" height="179" alt="2" /></td>
+        <td width="265"><img src="../Imagenes/Servicio3.jpg" width="242" height="181" alt="3" /></td>
+      </tr>
+      <tr>
+        <td><p>Mantenimiento y reparacion de computadoras</p>
+        <p>Precio: $40</p></td>
+        <td><p>Polizas de mantenimiento a empresas y negocios.</p>
+        <p>Precio: $50</p></td>
+        <td><p>Instalacion y configuración de puntos de venta</p>
+        <p>Precio: $50</p></td>
+      </tr>
+      <tr>
+        <td><img src="../Imagenes/servicio4.jpg" width="288" height="193" alt="f" /></td>
+        <td><img src="../Imagenes/Servicio5.jpg" width="257" height="206" alt="v" /></td>
+        <td><img src="../Imagenes/Servicio6.jpg" width="247" height="209" alt="b" /></td>
+      </tr>
+      <tr>
+        <td><p>Instalacion y configuracion de redes locales</p>
+        <p>Precio: $25</p></td>
+        <td><p>Instalacion y configuracion de camaras de seguridad</p>
+        <p>Precio: $50</p></td>
+        <td><p>Desarrollo de paginas web</p>
+        <p>$40</p></td>
+      </tr>
+    </table>
+    <p>&nbsp;</p>
+    <h3>Nuestros Clientes<br />
+      Opinión Acerca de Nosotros</h3>
+    <table width="885" height="322" border="0" align="left" cellspacing="10">
+      <tr>
+        <td width="602" height="316"><p>Agradezco el apoyo brindado durante estos años,por su excelente trabajo y dedicacion, su ayuda me ha sido de gran importancia para que mi cybercafe haya crecido, los recomiendo ampliamente pues su atencion personalizada siempre me ha sido puntual, amable y de excelente calidad.</p>
+        <p>&nbsp;</p>
+        <p>Margarita Rios.</p></td>
+        <td width="267"><img src="../Imagenes/atencion.jpg" width="337" height="321" alt="b" /></td>
+      </tr>
+    </table>
+    <p>&nbsp;</p>
+    <p>&nbsp; </p>
+    <h2>&nbsp;</h2>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p><!-- end .content --></p>
+  </div>
+  <div class="footer">
+    <table width="964" height="82" border="0" cellspacing="10">
+      <tr>
+        <td width="421" bgcolor="#FFDF55"><h5>Novel Tech</h5>
+          <p>Tecnología de calidad Empresa líder en el sector de prestación de servicios y diseño web.</p></td>
+        <td width="527" bgcolor="#FFFF55"><h5>Ponte en contacto</h5>
+          <p>Noveltech@gmail.com<br />
+            (555) 555 1234</p></td>
+      </tr>
+    </table>
+    <div id="apDiv2"><a href="Servicios.html"><img src="../Botones/button_servicios.png" width="109" height="45" alt="y" /></a></div>
+    <p>&nbsp;</p>
+    <div id="apDiv6"><a href="Inicio.html"><img src="../Botones/button_anterior.png" width="204" height="62" alt="n" /></a></div>
+    <p>&nbsp;</p>
+    <div id="apDiv7"><a href="Soporte.html"><img src="../Botones/button_siguiente.png" width="204" height="62" alt="n" /></a></div>
+    <p>&nbsp;</p>
+  <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

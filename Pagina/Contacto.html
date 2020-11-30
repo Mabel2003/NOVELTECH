@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #00FFAA;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+/* ~~ Selectores de elemento/etiqueta ~~ */
+ul, ol, dl { /* Debido a las diferencias existentes entre los navegadores, es recomendable no añadir relleno ni márgenes en las listas. Para lograr coherencia, puede especificar las cantidades deseadas aquí o en los elementos de lista (LI, DT, DD) que contienen. Recuerde que lo que haga aquí se aplicará en cascada en la lista .nav, a no ser que escriba un selector más específico. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* la eliminación del margen superior resuelve un problema que origina que los márgenes escapen de la etiqueta div contenedora. El margen inferior restante lo mantendrá separado de los elementos de que le sigan. */
+	padding-right: 15px;
+	padding-left: 15px; /* la adición de relleno a los lados del elemento dentro de las divs, en lugar de en las divs propiamente dichas, elimina todas las matemáticas de modelo de cuadro. Una div anidada con relleno lateral también puede usarse como método alternativo. */
+	font-size: 100%;
+}
+a img { /* este selector elimina el borde azul predeterminado que se muestra en algunos navegadores alrededor de una imagen cuando está rodeada por un vínculo */
+	border: none;
+}
+/* ~~ La aplicación de estilo a los vínculos del sitio debe permanecer en este orden (incluido el grupo de selectores que crea el efecto hover -paso por encima-). ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* a no ser que aplique estilos a los vínculos para que tengan un aspecto muy exclusivo, es recomendable proporcionar subrayados para facilitar una identificación visual rápida */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* este grupo de selectores proporcionará a un usuario que navegue mediante el teclado la misma experiencia de hover (paso por encima) que experimenta un usuario que emplea un ratón. */
+	text-decoration: none;
+}
+
+/* ~~ este contenedor de anchura fija rodea a las demás divs ~~ */
+.container {
+	width: 960px;
+	background-color: #FFF;
+	margin: 0 auto; /* el valor automático de los lados, unido a la anchura, centra el diseño */
+}
+
+/* ~~ no se asigna una anchura al encabezado. Se extenderá por toda la anchura del diseño. Contiene un marcador de posición de imagen que debe sustituirse por su propio logotipo vinculado ~~ */
+.header {
+	background-color: #FFDF00;
+}
+
+/* ~~ Esta es la información de diseño. ~~ 
+
+1) El relleno sólo se sitúa en la parte superior y/o inferior de la div. Los elementos situados dentro de esta div tienen relleno a los lados. Esto le ahorra las "matemáticas de modelo de cuadro". Recuerde que si añade relleno o borde lateral a la div propiamente dicha, éste se añadirá a la anchura que defina para crear la anchura *total*. También puede optar por eliminar el relleno del elemento en la div y colocar una segunda div dentro de ésta sin anchura y el relleno necesario para el diseño deseado.
+
+*/
+
+.content {
+
+	padding: 10px 0;
+}
+
+/* ~~ El pie de página ~~ */
+.footer {
+	padding: 10px 0;
+	background-color: #CCC49F;
+}
+
+/* ~~ clases float/clear varias ~~ */
+.fltrt {  /* esta clase puede utilizarse para que un elemento flote en la parte derecha de la página. El elemento flotante debe preceder al elemento junto al que debe aparecer en la página. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* esta clase puede utilizarse para que un elemento flote en la parte izquierda de la página. El elemento flotante debe preceder al elemento junto al que debe aparecer en la página. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* esta clase puede situarse en una <br /> o div vacía como elemento final tras la última div flotante (dentro de #container) si #footer se elimina o se saca fuera de #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+#apDiv1 {
+	position: absolute;
+	width: 132px;
+	height: 54px;
+	z-index: 1;
+	left: 567px;
+	top: 127px;
+}
+#apDiv2 {
+	position: absolute;
+	width: 129px;
+	height: 54px;
+	z-index: 2;
+	left: 699px;
+	top: 127px;
+}
+#apDiv3 {
+	position: absolute;
+	width: 129px;
+	height: 54px;
+	z-index: 3;
+	left: 828px;
+	top: 128px;
+}
+#apDiv4 {
+	position: absolute;
+	width: 133px;
+	height: 52px;
+	z-index: 4;
+	left: 957px;
+	top: 129px;
+}
+#apDiv5 {
+	position: absolute;
+	width: 145px;
+	height: 43px;
+	z-index: 5;
+	left: 397px;
+	top: 126px;
+}
+#apDiv6 {
+	position: absolute;
+	width: 151px;
+	height: 58px;
+	z-index: 6;
+	left: 103px;
+	top: 1645px;
+}
+-->
+</style></head>
+
+<body>
+<div class="container">
+  <div class="header"><a href="#"><img src="../Imagenes/NOVEL TECH.png" alt="Insertar logotipo aquí" name="Insert_logo" width="261" height="191" id="Insert_logo" style="background-color: #C6D580; display:block;" /></a>
+    <div id="apDiv5"><a href="NOVEL TECH.html.html"><img src="../Botones/button_pagina-principal.png" width="169" height="57" alt="h" /></a></div>
+    <div id="apDiv4"><a href="Contacto.html"><img src="../Botones/button_contacto (1).png" width="133" height="53" alt="h" /></a></div>
+    <a href="#"> </a>
+    <div id="apDiv3"><a href="Soporte.html"><img src="../Botones/button_soporte.png" width="129" height="53" alt="g" /></a></div>
+    <div id="apDiv2"><a href="Servicios.html"><img src="../Botones/button_servicios.png" width="127" height="55" alt="g" /></a></div> 
+    <!-- end .header --></div>
+  <div class="content">
+  <iframe width="918" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=918&amp;height=400&amp;hl=en&amp;q=J%20%20Quito+(ubicacion%20negocio)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> 
+  <p><a href='http://maps-generator.com/es'>Maps Generator ES</a>    </p>
+  <p>
+    <script type='text/javascript' src='https://maps-generator.com/google-maps-authorization/script.js?id=0b40d85c49a231ebf7585fa3752bc9ec9cdfc99d'></script></p>
+  <form id="form1" name="form1" method="post" action="">
+    <p>Déjanos Tus Comentarios   </p>
+    <p>
+      <label>Nombre: 
+        <input name="textfield" type="text" id="textfield" size="50" />
+      </label>
+  </p>
+    <p>
+      <label>E-mail: 
+        <input name="textfield2" type="text" id="textfield2" size="50" />
+      </label>
+    </p>
+    <p>Telefono: 
+      <input name="textfield3" type="text" id="textfield3" size="50" />
+    </p>
+    <p>
+      <label>Mensaje:<br />
+<textarea name="textarea" id="textarea" cols="45" rows="5"></textarea>
+      </label>
+    </p>
+    <p><img src="../Botones/button_enviar-mensaje (1).png" width="213" height="59" alt="e" /></p>
+    <p>&nbsp;</p>
+  </form>
+  <h1><!-- end .content -->Ubicacion:</h1>
+  <p>- <img src="../Imagenes/casa.png" width="51" height="41" alt="n" />Ecuador Quito El Quinche Barrio Bello Horizonte calle J </p>
+   <p>-<img src="../Imagenes/llamada-telefonica.png" width="47" height="41" alt="n" />Oficina: 02-3890040</p>
+   <p>-<img src="../Imagenes/gmail.png" width="45" height="38" alt="n" /> Noveltech@gmail.com</p>
+   <p>-<img src="../Imagenes/whatsapp.png" width="49" height="48" alt="b" />0959668542</p>
+  </div>
+  <div class="footer">
+    <table width="964" height="166" border="0" cellspacing="10">
+      <tr>
+        <td width="421" height="146" bgcolor="#FFDF55"><h5>Novel Tech</h5>
+        <p>Tecnología de calidad Empresa líder en el sector de prestación de servicios y diseño web.</p></td>
+        <td width="527" bgcolor="#FFFF55"><h5>Ponte en contacto</h5>
+          <p>Noveltech@gmail.com<br />
+        (555) 555 1234</p></td>
+      </tr>
+    </table>
+    <div id="apDiv1"><a href="Inicio.html"><img src="../Botones/button_inicio (1).png" width="131" height="55" alt="h" /></a></div>
+  </div>
+  <p><!-- end .container --></p>
+  <div id="apDiv6"><a href="Soporte.html"><img src="../Botones/button_anterior.png" width="204" height="55" alt="n" /></a></div>
+  <p>&nbsp;</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"  background-image: url ("IMA2.jpg");
+  background-repeat: repeat-x;>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #FFFFCC;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-image: url(../Imagenes/fondo4.jpg);
+}
+
+/* ~~ Selectores de elemento/etiqueta ~~ */
+ul, ol, dl { /* Debido a las diferencias existentes entre los navegadores, es recomendable no añadir relleno ni márgenes en las listas. Para lograr coherencia, puede especificar las cantidades deseadas aquí o en los elementos de lista (LI, DT, DD) que contienen. Recuerde que lo que haga aquí se aplicará en cascada en la lista .nav, a no ser que escriba un selector más específico. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* la eliminación del margen superior resuelve un problema que origina que los márgenes escapen de la etiqueta div contenedora. El margen inferior restante lo mantendrá separado de los elementos de que le sigan. */
+	padding-right: 15px;
+	padding-left: 15px; /* la adición de relleno a los lados del elemento dentro de las divs, en lugar de en las divs propiamente dichas, elimina todas las matemáticas de modelo de cuadro. Una div anidada con relleno lateral también puede usarse como método alternativo. */
+	text-align: center;
+	color: #F00;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+a img { /* este selector elimina el borde azul predeterminado que se muestra en algunos navegadores alrededor de una imagen cuando está rodeada por un vínculo */
+	border: none;
+}
+/* ~~ La aplicación de estilo a los vínculos del sitio debe permanecer en este orden (incluido el grupo de selectores que crea el efecto hover -paso por encima-). ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* a no ser que aplique estilos a los vínculos para que tengan un aspecto muy exclusivo, es recomendable proporcionar subrayados para facilitar una identificación visual rápida */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* este grupo de selectores proporcionará a un usuario que navegue mediante el teclado la misma experiencia de hover (paso por encima) que experimenta un usuario que emplea un ratón. */
+	text-decoration: none;
+}
+
+/* ~~ este contenedor de anchura fija rodea a las demás divs ~~ */
+.container {
+	width: 960px;
+	background-color: #FF6;
+	margin: 0 auto; /* el valor automático de los lados, unido a la anchura, centra el diseño */
+}
+
+/* ~~ no se asigna una anchura al encabezado. Se extenderá por toda la anchura del diseño. Contiene un marcador de posición de imagen que debe sustituirse por su propio logotipo vinculado ~~ */
+.header {
+	background-color: #00FF66;
+}
+
+/* ~~ Esta es la información de diseño. ~~ 
+
+1) El relleno sólo se sitúa en la parte superior y/o inferior de la div. Los elementos situados dentro de esta div tienen relleno a los lados. Esto le ahorra las "matemáticas de modelo de cuadro". Recuerde que si añade relleno o borde lateral a la div propiamente dicha, éste se añadirá a la anchura que defina para crear la anchura *total*. También puede optar por eliminar el relleno del elemento en la div y colocar una segunda div dentro de ésta sin anchura y el relleno necesario para el diseño deseado.
+
+*/
+
+.content {
+	padding: 10px 0;
+	color: #36F;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-align: justify;
+}
+
+/* ~~ El pie de página ~~ */
+.footer {
+	padding: 10px 0;
+	background-color: #CCCCCC;
+}
+
+/* ~~ clases float/clear varias ~~ */
+.fltrt {  /* esta clase puede utilizarse para que un elemento flote en la parte derecha de la página. El elemento flotante debe preceder al elemento junto al que debe aparecer en la página. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* esta clase puede utilizarse para que un elemento flote en la parte izquierda de la página. El elemento flotante debe preceder al elemento junto al que debe aparecer en la página. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* esta clase puede situarse en una <br /> o div vacía como elemento final tras la última div flotante (dentro de #container) si #footer se elimina o se saca fuera de #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.container .content h1 {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 100%;
+	text-align: center;
+}
+.container .content table {
+	color: #0C6;
+}
+.container .content table {
+	color: #FFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.f {
+	text-align: center;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.container .content table tr .f p {
+	color: #FFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-align: center;
+}
+#apDiv1 {
+	position: absolute;
+	width: 117px;
+	height: 115px;
+	z-index: 1;
+	left: 121px;
+	top: 2375px;
+}
+.container .content table tr .f b k {
+	text-align: center;
+}
+.n {
+	text-align: center;
+}
+.container .content table tr .f .b tr th {
+	color: #F00;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.container .footer table {
+	color: #800080;
+}
+.container .footer table tr td h5 {
+	color: #7F00FF;
+	font-size: 120%;
+}
+#apDiv2 {
+	position: absolute;
+	width: 104px;
+	height: 44px;
+	z-index: 1;
+	left: 874px;
+	top: 151px;
+}
+#apDiv {
+	position: absolute;
+	width: 109px;
+	height: 40px;
+	z-index: 1;
+	left: 977px;
+	top: 154px;
+}
+#apDiv3 {
+	position: absolute;
+	width: 130px;
+	height: 53px;
+	z-index: 1;
+	left: 889px;
+	top: 216px;
+}
+#apDiv4 {
+	position: absolute;
+	width: 130px;
+	height: 53px;
+	z-index: 1;
+	left: 894px;
+	top: 216px;
+}
+#apDiv5 {	position: absolute;
+	width: 130px;
+	height: 53px;
+	z-index: 1;
+	left: 894px;
+	top: 153px;
+}
+#apDiv6 {	position: absolute;
+	width: 130px;
+	height: 53px;
+	z-index: 1;
+	left: 894px;
+	top: 153px;
+}
+#apDiv7 {
+	position: absolute;
+	width: 111px;
+	height: 40px;
+	z-index: 2;
+	left: 633px;
+	top: 152px;
+}
+#apDiv8 {
+	position: absolute;
+	width: 108px;
+	height: 38px;
+	z-index: 3;
+	left: 758px;
+	top: 153px;
+}
+#apDiv9 {	position: absolute;
+	width: 131px;
+	height: 40px;
+	z-index: 3;
+	left: 543px;
+	top: 164px;
+}
+#apDiv10 {	position: absolute;
+	width: 131px;
+	height: 40px;
+	z-index: 3;
+	left: 543px;
+	top: 164px;
+}
+#apDiv11 {
+	position: absolute;
+	width: 139px;
+	height: 44px;
+	z-index: 4;
+	left: -499px;
+	top: -2px;
+}
+#apDiv12 {
+	position: absolute;
+	width: 175px;
+	height: 40px;
+	z-index: 4;
+	left: 96px;
+	top: 2982px;
+}
+#apDiv13 {
+	position: absolute;
+	width: 199px;
+	height: 29px;
+	z-index: 5;
+	left: 696px;
+	top: 2987px;
+}
+-->
+</style></head>
+
+<body bgcolor="#FFFFFF" background="../Imagenes/FONDO.jpg">
+
+<div class="container">
+  <div class="header"><a href="#"><img src="../Imagenes/NOVEL TECH.png" alt="Insertar logotipo aquí" name="Insert_logo" width="289" height="206" id="Insert_logo" style="background-color: #C6D580; display: block; color: #CC6633;" /></a>
+    <div id="apDiv"><a href="Contacto.html"><img src="../Botones/button_contacto.png" width="108" height="51" alt="n" /></a>
+      <div id="apDiv11"><a href="NOVEL TECH.html.html"><img src="../Botones/button_pagina-principal.png" width="159" height="52" alt="g" /></a></div>
+    </div>
+    <div id="apDiv2"><a href="Soporte.html"><img src="../Botones/button_soporte.png" width="104" height="53" alt="g" /></a></div>
+    <div id="apDiv8"><a href="Servicios.html"><img src="../Botones/button_servicios.png" width="118" height="50" alt="h" /></a></div>
+  </div>
+  <div class="content">
+  <body background="../Imagenes/FONDO.jpg">
+    <h1><b><marquee></marquee></b><marquee><tr> <td width="394"><b>Mantenimiento y Reparación</b></td></tr></marquee></p>
+    </h1>
+    <div id="apDiv12"><a href="NOVEL TECH.html.html"><img src="../Botones/button_anterior.png" width="211" height="58" alt="b" /></a></div>
+    <div id="apDiv7"><a href="Inicio.html"><img src="../Botones/button_inicio.png" width="125" height="52" alt="g" /></a></div>
+    <p style="color:blue">Mantenimiento y reparacion de computadoras, si su equipo dejo de funcionar no se preocupe, nosotros lo solucionamos, contamos con tecnicas capaces de solucionar el problema en el lugar de residencia o negocio, Y si requiere traslado hasta nuestro taller de reparacion, su equipo sera devuelto con la garantia de no reaizar ningun cambio ajeno al servicio solicitado.</p>
+    <h2><img src="../Imagenes/IMA2.jpg" width="378" height="215" align="middle" /></h2>
+    <h1><b><marquee><tr> <td width="394">Soporte Remoto</td></tr></marquee></b></p></h1>
+    <p style="color:blue">Para un mejor servicio a nuestros clientes y socios, contamos con asistencia remota para problemas urgentes en caso de poderse solucionar de esta manera, de lo contrario llegaremos en menos de 24 horas hasta el sitio para atenderlo personalmente de la mejor manera.</p>
+    <h2><img src="../Imagenes/IMA2.jpg" width="378" height="215" align="middle" /></h2>
+    <p>&nbsp;</p>
+    <h1><b><marquee><tr> <td width="394">Venta de computo</td></tr></marquee></b></p></h1>
+    <p style="color:blue">Venta de equipo de computo, impresoras, refaciones, accesorios, consumibles, Windows, Office, Antivirus, Pantallas, Discos, Teclados, Mouse, Gabinetes, Procesadores, Memorias, Reguladores, Cargadores, Punto de venta, Entre otros.    </p>
+    <h2><img src="../Imagenes/computo.jpg" width="378" height="215" align="middle" /></h2>
+    <p>&nbsp;</p>
+    <h1><b><marquee><tr> <td width="394">Nuestros servicios de reparación</td></tr></marquee></b></p></h1>
+    <p style="color:blue">Sabemos lo importante que es para usted solucionar el problema, por eso, garantizamos dar solución en un máximo de 72 horas una vez que ha sido diagnosticado su equipo, conozca todo sobre nuestros diferentes servicios que le pueden hacer mucho más fácil y efectivo un proceso o tarea dentro de su Empresa, Negocio o Residencia.</p> 
+    
+    <table width="826" height="369" border="1" align="center">
+      <tr bgcolor="#6633FF">
+        <td>  &nbsp;<img src="../Imagenes/editor.png" width="175" height="138" /></td>
+        <td><img src="../Imagenes/software.png" width="160" height="138" alt="software" /></td>
+        <td><img src="../Imagenes/herramientas-para-reparar.png" width="170" height="171" alt="Reparacion" /></td>
+        <td><img src="../Imagenes/redes.png" width="170" height="170" alt="Redes" /></td>
+      </tr>
+      <tr bgcolor="#66FFFF">
+        <td height="125"><h5>MANTENIMIENTO DE PC Y LAPTOP</h5></td>
+        <td><h5>REPARACIÓN DE SOFTWARE</h5></td>
+        <td><h5>REPARACIÓN DE HARDWARE</h5></td>
+        <td><h5>REDES DE COMPUTADORAS</h5></td>
+      </tr>
+      <tr bgcolor="#FF99CC">
+        <td>Si su equipo está funcionando adecuadamente, y desea darle solo un mantenimiento preventivo para seguirlo manteniendo así y tener la certeza de garantizar la seguridad del equipo y la información que almacena en el.</td>
+        <td>Cuando su equipo ya necesita formateo e instalación de sistema operativo, antivirus, paquetería de ofimática, así como la paquetería complementaria para trabajar en oficina o realizar sus trabajos y tareas de la escuela.</td>
+        <td>Actualización de computadoras, reemplazo de discos, expansión de memoria RAM, cambio de display, cargadores o eliminadores de corriente, baterías, teclados, procesadores, tarjetas, centro de carga, cable de video, entre otros.</td>
+        <td>¿Desea implementar su red de trabajo o bien rediseñarla?, nosotros le brindamos el servicio de instalación y/o mantenimiento de su red de computadoras y recursos a la medida de su Empresa, Negocio, Oficinas o Cibercafé.</td>
+      </tr>
+    </table>
+    <p>&nbsp;</p>
+    <table width="960" height="281" border="1">
+      <tr>
+        <td height="275" bgcolor="#003399" class="f"><b><p class="n">Nuestro Proceso </p></b>
+        <p>La manera más fácil y eficaz para que su equipo pueda ser reparado inclusive, si no la puede traer hasta nuestro taller de reparación.</p>
+        <p><label></label>
+   <table width="917" height="279" border="0" cellspacing="10" class="b">
+     <tr>
+      <th width="215" height="47">1 Hacer elreporte</th>
+      <th width="215">2 Servicio  a domicilio</th>
+      <th width="215">3 Servicio Express</th>
+      <th width="214">4 Garantia y calidad</th>
+    </tr>
+    <tr>
+      <td>Reporte el daño de su equipo directamente a nuestras oficinas 1487280 o WhatsApp 7712662521 o bien desde nuestra página web.</td>
+      <td> Si no puede traer su equipo a nuestro taller, nosotros le enviamos a un técnico hasta su domicilio sin ningún costo extra en el servicio requerido para su equipo.</td>
+      <td>Después del diagnóstico le daremos una solución rápida y eficaz de su equipo</td>
+      <td>Tenga la certeza de que todos nuestros servicios son garantizados.</td>
+    </tr>
+ </table>
+   <p>&nbsp;</p>
+  
+        </p></td>
+      </tr>
+    </table>
+    <p>&nbsp;</p>
+  </div>
+  <div class="footer">
+    <table width="964" height="82" border="0" cellspacing="10">
+      <tr>
+        <td width="421" bgcolor="#FFDF55"><h5>Novel Tech</h5>
+          <p>Tecnología de calidad Empresa líder en el sector de prestación de servicios y diseño web.</p></td>
+        <td width="527" bgcolor="#FFFF55"><h5>Ponte en contacto</h5>
+          <p>Noveltech@gmail.com<br />
+          (555) 555 1234</p></td>
+      </tr>
+    </table>
+    <p>&nbsp;</p>
+    <p>
+      <!-- end .footer -->
+    </p>
+    <div id="apDiv13"><a href="Servicios.html"><img src="../Botones/button_siguiente.png" width="204" height="55" alt="h" /></a></div>
+    <p>&nbsp; </p>
+  </div>
+  <!-- end .container --></div>
+</body>
+</html>
